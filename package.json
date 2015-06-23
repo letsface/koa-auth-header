@@ -1,0 +1,20 @@
+{
+  "name": "koa-auth-header",
+  "version": "1.0.0",
+  "description": "Simple Koa Authorization Header Parser",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --harmony-generators --harmony_arrow_functions"
+  },
+  "author": "https://github.com/sylvainv",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^3.9.3"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "koa": "^0.21.0",
+    "mocha": "^2.2.5",
+    "supertest-koa-agent": "^0.2.1"
+  }
+}
