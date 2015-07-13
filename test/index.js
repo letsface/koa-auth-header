@@ -11,7 +11,12 @@ describe("Authentication", function() {
     app = koa();
 
     var authHeader = require('../index.js')({
-      required: true
+      required: true,
+      types: {
+        Bearer: function(value) {
+          this.request.token = value;
+        }
+      }
     });
 
     app.use(function* (next) {
